@@ -46,7 +46,7 @@ struct kirin_drm_private {
 struct kirin_fbdev {
 	struct drm_fb_helper fb_helper;
 	struct drm_framebuffer *fb;
-
+	//struct drm_fbdev_cma *fbdev;
 	struct ion_client *ion_client;
 	struct ion_handle *ion_handle;
 	struct iommu_map_format iommu_format;
